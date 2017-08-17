@@ -1,0 +1,22 @@
+Source: libdisplaycore-driver-framebuffer332
+Section: libraries
+Priority: extra
+Maintainer: Matt Jenkins <matt@majenko.co.uk>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+
+Package: libdisplaycore-driver-framebuffer332
+Section: libraries
+Architecture: all
+XBSC-Group: DisplayCore
+XBSC-Subgroup: Drivers
+Depends: libdiscplaycore-core
+Provides: Framebuffer332.h
+Description: DisplayCore RGB332 Framebuffer
+ The RGB332 Framebuffer is a virtual display / image driver
+ which allows you to draw "off screen" then render the finished
+ image to the screen at will.  RGB332 is an 8 bit colour format
+ consisting of 3 bits of red, 3 bits of green, and 2 bits of blue.
+
+
+
