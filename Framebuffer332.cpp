@@ -33,7 +33,7 @@ void Framebuffer332::setPixel(int x, int y, color_t color) {
 }
 
 void Framebuffer332::fillScreen(color_t color) {
-    for (uint32_t x = 0; x < _width * _height; x++) {
+    for (int x = 0; x < _width * _height; x++) {
         _buf[x] = color565to332(color);
     }
 }
@@ -58,7 +58,7 @@ void Framebuffer332::draw(DisplayCore *dev, int x, int y) {
     } else {
         dev->openWindow(x, y, getWidth(), getHeight());
         uint32_t len = getWidth() * (uint32_t)getHeight();
-        for (int p = 0; p < len; p++) {
+        for (uint32_t p = 0; p < len; p++) {
             dev->windowData(color332to565(_buf[p]));
         }
         dev->closeWindow();

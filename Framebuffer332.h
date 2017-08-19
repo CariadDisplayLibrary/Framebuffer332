@@ -24,7 +24,7 @@ class Framebuffer332 : public Image {
         void draw(DisplayCore &dev, int x, int y) { draw(&dev, x, y); }
         void draw(DisplayCore &dev, int x, int y, color_t t) { draw(&dev, x, y, t); }
         void drawTransformed(DisplayCore &dev, int x, int y, int transform) { drawTransformed(&dev, x, y, transform); }
-        void drawTransformed(DisplayCore &dev, int x, int y, int transform, color_t t) { drawTransformed(&dev, x, y, t); }
+        void drawTransformed(DisplayCore &dev, int x, int y, int __attribute__((unused)) transform, color_t t) { drawTransformed(&dev, x, y, t); }
 
 
 };
