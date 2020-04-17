@@ -1,2 +1,3 @@
-Framebuffer332.cpp libraries/DisplayCore/Framebuffer332
-Framebuffer332.h libraries/DisplayCore/Framebuffer332
+library.json libraries/DisplayCore/Framebuffer332
+library.properties libraries/DisplayCore/Framebuffer332
+src libraries/DisplayCore/Framebuffer332
