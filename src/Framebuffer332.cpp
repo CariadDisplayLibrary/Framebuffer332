@@ -42,7 +42,7 @@ color_t Framebuffer332::colorAt(int x, int y) {
     return color332to565(_buf[x + (y * getWidth())]);
 }
 
-void Framebuffer332::draw(DisplayCore *dev, int x, int y) {
+void Framebuffer332::draw(Cariad *dev, int x, int y) {
     if (_filter != NULL) {
         uint32_t p = 0;
         color_t line[getWidth()];
@@ -65,7 +65,7 @@ void Framebuffer332::draw(DisplayCore *dev, int x, int y) {
     }
 }
 
-void Framebuffer332::draw(DisplayCore *dev, int x, int y, color_t t) {
+void Framebuffer332::draw(Cariad *dev, int x, int y, color_t t) {
     uint32_t p = 0;
     color_t line[getWidth()];
 
@@ -98,7 +98,7 @@ void Framebuffer332::draw(DisplayCore *dev, int x, int y, color_t t) {
     }
 }
 
-void Framebuffer332::drawTransformed(DisplayCore *dev, int x, int y, int transform) {
+void Framebuffer332::drawTransformed(Cariad *dev, int x, int y, int transform) {
     uint32_t p = 0;
     for (int py = 0; py < getHeight(); py++) {
         for (int px = 0; px < getWidth(); px++) {
@@ -121,7 +121,7 @@ void Framebuffer332::drawTransformed(DisplayCore *dev, int x, int y, int transfo
     }
 }
 
-void Framebuffer332::drawTransformed(DisplayCore *dev, int x, int y, int transform, color_t t) {
+void Framebuffer332::drawTransformed(Cariad *dev, int x, int y, int transform, color_t t) {
     uint32_t p = 0;
     for (int py = 0; py < getHeight(); py++) {
         for (int px = 0; px < getWidth(); px++) {

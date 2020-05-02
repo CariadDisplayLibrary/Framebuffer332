@@ -1,13 +1,14 @@
-Source: libdisplaycore-driver-framebuffer332
+Source: libcariad-driver-framebuffer332
 Section: main
 Priority: extra
 Maintainer: Matt Jenkins <matt@majenko.co.uk>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.4
 
-Package: libdisplaycore-driver-framebuffer332
+Package: libcariad-driver-framebuffer332
+Replaces: libdisplaycore-driver-framebuffer332
 Architecture: all
-XBSC-Group: DisplayCore
+XBSC-Group: Cariad
 XBSC-Subgroup: Drivers
 XBSC-Subsubgroup: Virtual
 Depends: libdiscplaycore-core
